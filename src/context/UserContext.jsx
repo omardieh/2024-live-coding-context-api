@@ -10,7 +10,7 @@ export const useUserContext = () => useContext(UserContext);
 export default function UserContextProvider({ children }) {
   const [username, setUsername] = useState("Bob");
   const [userAge, setUserAge] = useState(18);
-
+    
   return (
     <UserContext.Provider
       value={{ username, setUsername, userAge, setUserAge }}
